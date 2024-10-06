@@ -1,0 +1,12 @@
+.container{
+    text-align: center;
+}
+
+.container button{
+    background-color: aqua;
+}
+
+.output{
+    color: blueviolet;
+    margin-top: 15px;
+}

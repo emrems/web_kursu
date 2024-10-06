@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin kullanımı</title>
+    <style>
+        .kutu{
+            background-color: aqua;
+            width: 400px;
+            height: 250px;
+            margin-top: 40px;
+            margin-left: 40px;
+            
+        }
+        /*
+        margin özelliğği nesneler arasında sağdan soldan üstten alttan boşluklar bırakır margin özelliği en dıştaki nesneler için kullanılır
+        nesne içindeki nesnlerin konumunu ayarlamak için padding özelliği kullanılır
+        margin için kullanım aşağıdaki gibidir
+
+        top=üstten boşluk ayarlamak için
+        left=soldan boşluk ayarlamak için
+        right=sağdan boşluk ayarlamak için  
+        
+        */
+
+        .padding{
+            background-color: yellowgreen;
+            width: 500px;
+            height: 250px;
+
+            
+        }
+        .h3{
+            padding-left: 40px;
+        }
+        .h4{
+            padding-top: 40px;
+            padding-left: 5px;
+            padding-right: 10px;
+            color: blue;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- margin kullanımı-->
+<p>margin kullanımı</p>
+<div class="kutu"></div>
+<p>bilgisayar mühendisliği</p>
+<p style="margin-top: 50px; margin-left: 50px;">elektrik mühendisliği</p>
+
+<!-- padding kullanımı-->
+
+<div class="padding">
+    <p style="margin-top: 50px; " class="h3" >padding kullanımı</p>
+    <p class="h3">emre almamış</p>
+    <p class="h4"> ayarlamalar</p>
+</div>
+
+</body>
+</html>

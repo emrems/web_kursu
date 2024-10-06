@@ -1,0 +1,43 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+.şifre{
+    width: 360px;
+    margin-top: 80px;
+    padding: 50px;
+    background-color:black;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px 0px rgba(red, green, blue, alpha);
+    
+}
+
+h1{
+    
+    color: red;
+    text-align: center;
+    font-size: 25px;
+}
+
+.result{
+    color:blanchedalmond;
+    padding-top: 5px;
+}
+
+.result p{
+    color: rgb(45, 160, 60);
+}
+
+.btn{
+    width:100% ;
+    margin-top: 8px;
+    background-color: blueviolet;
+}
+
+
+.btn:hover{
+    box-shadow:0px 1px 10px 0px rgba(0,0,0,4);
+}

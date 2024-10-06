@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        
+       /* 
+       
+       *{
+            color: aquamarine; bodynin içindekilerinin tüm rengini aquamarine yaptı yani tümünü seçer
+        }
+        
+        */
+
+        /*
+        p{
+            color: bisque; sadece p tagındakilerin rengini değiştirdi
+        }*/
+
+        
+        /*
+        div,p{
+            color: blue; div ve p tagındakşlerin yerini değiştirdi
+        }*/
+       
+        /*
+        p,h3{
+            background-color: blueviolet; p ve h3 taglarının arka planını değiştir
+        }*/
+
+        /*
+        div p{
+            color: chartreuse; div tagının içindeki bütün p taglarını seç
+        }*/
+        /*
+        div>p{
+            color: brown;parentı div olan tüm p taglarının rengini değiştir
+        }*/
+
+        /*
+        div>p:first-child{
+            color: aqua;parentı p div olan tüm tagları seç ve içinden ilk çocukların rengini değiştir
+        }*/
+
+        /*
+        div>p:last-child{
+            color: coral;parentı div olan tüm p taglarını seç ve son çocukları al
+        }*/
+
+        /*
+        div>nav>a:nth-child(3){
+            color:red;parentı div olan tüm navların içinden parentı nav olan çocuklardan 3. yü seç
+        }*/
+    </style>
+</head>
+<body>
+    <div>
+        <p>paragraf1</p>
+        <p>paragraf2</p>
+        <p>paragraf3</p>
+        <p>paragraf4</p>
+    
+    <nav>
+        <p>pargraf6</p>
+        <a href="">link1</a>
+        <a href="">link2</a>
+        <a href="">link3</a>
+    </nav>
+    </div>
+
+    <a href="">link4</a>
+    <a href="">link5</a>
+
+    <div class="div2">
+        <p>paragraf7</p>
+        <p>paragraf8</p>
+        <p>paragraf9</p>
+    </div>
+    <div>
+        <h3>h3 etiketi</h3>
+        <h1>emre</h1>
+    </div>
+    <h3>h3 etiketi 2</h3>
+    <h3>h3 etiketi 3</h3>
+    <h3>h3 etiketi 4</h3>
+</body>
+</html>

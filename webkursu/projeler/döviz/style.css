@@ -1,0 +1,37 @@
+#main{
+    display: flex;
+    flex-direction: column;/*eğer flex-direction: row; deseydim containere eklenen her div yan yana gelecek*/
+    align-items: center;
+    border: solid;
+    width: 600px;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: bisque
+}
+
+.header-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-wrapper > h2{
+    margin: 15px;
+}
+
+input{
+    padding:5px ;
+    margin: 0px 10px;
+    width: 120px;
+}
+
+select{
+    padding: 5px;
+}
+
+span{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}

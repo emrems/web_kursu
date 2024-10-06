@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menü yapımı</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        ul {
+            list-style-type: none;
+            background-color:black;
+            width: 100%;
+
+        }
+
+        ul li a {
+            text-decoration: none;/*alt yazıyı silmek için*/
+            color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+
+        }
+
+        ul li {
+            display: inline-block;
+            width: 100px;
+            padding: 10px;
+            margin-right: 50px;
+            margin-left: -40px;
+            
+           
+        }
+
+        ul li:hover {
+            background-color: azure;
+        }
+
+       
+        i{
+            padding-right:10px;
+        }
+        #news-contecent{
+            position: absolute;
+            /*display=none akıştan çıkar yani sayfaya geldiğinde hemen gözükmez üzerine gelince gözükür*/
+            display: none;
+            z-index: 1;
+            margin-top: 10px;
+            
+        }
+        /* .news-li classında #news-contenect id sine sahip olanların özelliklerini verdik*/
+        .news-li:hover #news-contecent{
+            display: block;
+        }
+
+        #news2-contect{
+            position: absolute;
+            display: none;
+            z-index: 1;
+            margin-left: 115px;
+            margin-top: -30px;
+        }
+        .news2-li:hover #news2-contect{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href=""><i class="fa-solid fa-house"></i>home</a></li>
+        <li class="news-li">
+            <a href=""><i class="fa-solid fa-newspaper"></i>news</a>
+            <div id="news-contecent">
+                <ul>
+                    <li style="display: block;"><a href="#">news1</a></li>
+                    <li class="news2-li" style="display: block;"><a href="#">news2</a>
+                        <div id="news2-contect">
+                            <ul>
+                                <li><a href="#">detail1</a></li>
+                                <li><a href="#">detail2</a></li>
+                                <li><a href="#">detail3</a></li>
+                            </ul>
+                        </div>
+                    
+                    
+                    </li>
+                    <li style="display: block;"><a href="#">news3</a></li>
+                    <li style="display: block;"><a href="#">news4</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href=""><i class="fa-solid fa-address-book"></i>contact</a></li>
+        <li><a href=""><i class="fa-light fa-eject"></i>abaout</a></li>
+    </ul>
+</body>
+
+</html>
